@@ -1,0 +1,316 @@
+/*
+Жмем F1
+Пишем Google Fonts
+Выбираем import
+Пишем имя шрифта
+Убираем лишнее
+Добавляем кавычки и запись:
+&display=swap&subset=cyrillic-ext
+*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700&display=swap");
+/* 
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-LightItalic.woff2") format("woff2"), url("../fonts/Gilroy-LightItalic.woff") format("woff");
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+} */
+@font-face {
+    font-family: 'Gvozdi';
+    src: url('../fonts/GvozdiRegular.woff2') format('woff2'),
+    url('../fonts/GvozdiRegular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gagalin';
+    src: url('../fonts/Gagalin-Regular.woff2') format('woff2'),
+        url('../fonts/Gagalin-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	color: aliceblue;
+	background-color: rgb(10, 10, 15);
+	/* line-height: 1; */
+	font-family: 'Gvozdi', fantasy;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 20px;
+}
+/* ------------------ */
+
+/* Свойства шрифта */
+
+/* 
+font-family:
+Устанавливает семейство шрифта
+наследуется
+*/
+/* font-family: "Имя шрифта", "Имя шрифта", тип шрифта */
+/* font-family: "Times New Roman"; */
+/* font-family: Arial; */
+
+/*
+Типы шрифта:
+serif — шрифты с засечками (антиквенные), типа Times;
+sans-serif — рубленные шрифты (шрифты без засечек или гротески), типичный представитель — Arial;
+cursive — курсивные шрифты;
+fantasy — декоративные шрифты;
+monospace — моноширинные шрифты, ширина каждого символа в таком семействе одинакова (шрифт Courier).
+*/
+
+/* 
+font-size. Определяет размер шрифта.
+наследуется
+*/
+/* 
+font-style:
+Определяет начертание шрифта — обычное, курсивное или наклонное.
+normal - Обычное начертание текста.
+italic - Курсивное начертание. 
+oblique - Наклонное начертание. Курсив и наклонный шрифт при всей их похожести не одно и то же. Курсив это специальный шрифт имитирующий рукописный, наклонный же образуется путем наклона обычных знаков вправо. 
+*/
+/*
+font-weight:
+Устанавливает насыщенность шрифта.
+
+100 - thin
+200 - 
+300 - lite
+400 - normal
+500 - medium
+600 - semibold
+700 - bold
+800 - 
+900 - black
+*/
+
+/* 
+Файл №1
+"Times New Roman"
+font-style: normal;
+font-weight: normal;
+
+Файл №2
+"Times New Roman"
+font-style: italic;
+font-weight: normal;
+
+Файл №3
+"Times New Roman"
+font-style: italic;
+font-weight: 700;
+
+Файл №4
+"Times New Roman"
+font-style: normal;
+font-weight: 700;
+
+*/
+
+
+/* Свойства текста */
+
+/* 
+color
+Определяет цвет текста. Для задания цветов обычно 
+используются числа в шестнадцатеричном коде, 
+либо с помощью RGB.
+наследуется
+ */
+/*
+text-align
+Определяет горизонтальное выравнивание текста в пределах элемента. 
+center - Выравнивание текста по центру.
+justify - Выравнивание по ширине, что означает одновременное выравнивание по левому и правому краю. Чтобы произвести это действие браузер в этом случае добавляет пробелы между словами.
+left - Выравнивание текста по левому краю. 
+right - Выравнивание текста по правому краю.
+*/
+
+/*
+text-decoration
+Добавляет оформление текста в виде его подчеркивания, перечеркивания, линии над текстом и мигания. 
+Одновременно можно применить более одного стиля, перечисляя значения через пробел. Это свойство наследуется и может принимать значения:
+line-through - Создает перечеркнутый текст.
+overline - Линия проходит над текстом.
+underline - Устанавливает подчеркнутый текст. 
+none - Отменяет все эффекты, в том числе и подчеркивания у ссылок, которое задано по умолчанию.
+*/
+
+/*
+text-shadow: горизонтальное_смещение вертикальное_смещение размер цвет;
+Добавляет тень к тексту.
+Прмер text-shadow: 1px 1px 1px #000;
+Прмер text-shadow: 1px 1px 1px #000, -5px 3px 2px red;
+*/
+
+/*
+text-transform
+Управляет преобразованием текста в заглавные или прописные символы.
+capitalize  - Первый символ каждого слова в предложении будет заглавным. Остальные символы свой вид не меняют.
+lowercase - Все символы текста становятся строчными (нижний регистр). 
+uppercase - Все символы текста становятся прописными (верхний регистр).
+none - Не меняет регистр символов.
+*/
+/*
+line-height
+Устанавливает межстрочный интервал текста. Широко применяется при верстке текста.
+*/
+/*
+white-space
+Управляет свойствами пробелов между словами. Пименяется в основном со значением 
+nowrap которое запрещает перенос строки. Таким образом весь текст отображается в одну строку и не ломается. Значение normal вернет все как было.
+*/
+
+/*
+letter-spacing
+Определяет интервал между символами (буквами). Используется когда нужно разрядить текст.
+*/
+/*
+word-spacing
+Устанавливает интервал между словами.
+*/
+/*
+text-indent
+Устанавливает величину отступа первой строки блока текста. При меняется, если нам нужно создать что-то типа красной строки.
+*/
+
+h1 {
+	font-size: 45px;
+	text-shadow: 0px 0px 10px rgb(224, 218, 218);
+	text-indent: 40px;
+	font-weight: bold;
+}
+h1,h2{
+	font-family: 'Amatic SC', 'Geometria', sans-serif;
+}
+.header img {
+	width: 45px;
+}
+body {
+	background-image: url('../img/header.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.LittleNightmares {
+	font-family: 'Amatic SC', 'Geometria', sans-serif;
+	text-transform: capitalize;
+}
+.box  p {
+	max-width: 38%;
+	text-align: justify;
+	line-height: 1.5;
+	text-shadow: 1px 1px 2px rgb(0, 0, 0), 1px 2px 2px rgb(0, 0, 0), 2px 2px 2px rgb(0, 0, 0), -1px -1px 2px rgb(0, 0, 0), -1px -2px 2px rgb(0, 0, 0), -2px -2px 2px rgb(0, 0, 0);
+}
+p.box__text {
+	
+}
+.box a {
+	font-weight: bold;
+}
+   a 	{
+	 color:#cf0d0d; /* Цвет ссылок */
+	 text-decoration: underline;
+   }
+   a:visited {
+    color: #db1616; /* Цвет посещенных ссылок */
+	}
+	a:active {
+	 color: #cecece; /* Цвет активных ссылок */
+	/*  это конечно отступление от урока но сне нужно было покрасить эту ссылку в белый цвет */
+	}
+	nav {
+		text-align: center;
+		text-shadow: 1px 1px 2px rgb(238, 255, 0), 1px 2px 2px rgb(238, 255, 0); 
+	}
+	h2 {
+		font-size: 25px;
+
+	}
+.content h2 {
+	font-family: 'Gagalin';
+	text-align: right;
+	color: rgb(152, 233, 152);
+	text-decoration: underline;
+	letter-spacing: 3px;
+	text-shadow: -3px -3px 15px rgb(32, 118, 168);
+	text-transform: uppercase;
+}
+	
+.content h3 {
+	font-family: 'Gagalin';
+	text-align: center;
+	color: rgb(255, 20, 4);
+	text-decoration: underline;
+	letter-spacing: 3px;
+	text-shadow: -3px -3px 15px rgb(0, 255, 191);
+	text-transform: uppercase;
+}
+.content p {
+	text-align: right;
+
+}
+.p2 p {
+	color: darkred;
+}
+.p2  span {
+	color: darksalmon;
+	text-shadow: 0px 0px 5px darkturquoise;
+}
+.img {
+	max-width: 100%;
+}
+
+footer {
+	font-size: 25px;
+	background-color: gold;
+	text-align: center;
+	text-shadow: -3px -3px 10px #059b2a, -1px 2px 10px  #059b2a, 2px 2px 10px  #059b2a;
+}
